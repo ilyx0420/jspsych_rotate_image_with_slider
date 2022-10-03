@@ -122,7 +122,7 @@ html += '<div id="jspsych-image-resize-response-handle" style="cursor: move; bac
       html += 'width:auto;';
     }
     html += '">';
-    html += '<input type="range" class="jspsych-slider" value="'+trial.slider_start+'" min="'+trial.min+'" max="'+trial.max+'" step="'+trial.step+'" oninput="this.nextElementSibling.value = this.value '+ -180 +'" id="jspsych-html-slider-response-response"><input disabled style="width: 20px;" placeholder = "0"  id = "nid"></input>';
+    html += '<input type="range" class="jspsych-slider" value="'+trial.slider_start+'" min="'+trial.min+'" max="'+trial.max+'" step="'+trial.step+'" oninput="this.nextElementSibling.value = this.value '+ -180 +'" id="jspsych-html-slider-response-response"><input disabled style="width: 26px;" placeholder = "0"  id = "nid"></input>';
     html += '<div>'
     for(var j=0; j < trial.labels.length; j++){
       var label_width_perc = 100/(trial.labels.length-1);
