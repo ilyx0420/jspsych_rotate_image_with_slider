@@ -122,7 +122,7 @@ html += '<div id="jspsych-image-resize-response-handle" style="cursor: move; bac
       html += 'width:auto;';
     }
     html += '">';
-    html += '<input type="range" class="jspsych-slider" value="'+trial.slider_start+'" min="'+trial.min+'" max="'+trial.max+'" step="'+trial.step+'" oninput="this.nextElementSibling.value = this.value '+ -90 +'" id="jspsych-html-slider-response-response"><input disabled style="width: 20px;" placeholder = "0"  id = "nid"></input>';
+    html += '<input type="range" class="jspsych-slider" value="'+trial.slider_start+'" min="'+trial.min+'" max="'+trial.max+'" step="'+trial.step+'" oninput="this.nextElementSibling.value = this.value '+ -180 +'" id="jspsych-html-slider-response-response"><input disabled style="width: 20px;" placeholder = "0"  id = "nid"></input>';
     html += '<div>'
     for(var j=0; j < trial.labels.length; j++){
       var label_width_perc = 100/(trial.labels.length-1);
@@ -160,7 +160,7 @@ html += '<div id="jspsych-image-resize-response-handle" style="cursor: move; bac
 
 // --- !!!!! ----- Display slider value in console / get input value and transfer ----- !!!!! ----- //
       display_element.querySelector('#jspsych-html-slider-response-response').addEventListener('input', function () {
-        var slider_value = document.querySelector('input').value - 90; //get input value from the slider
+        var slider_value = document.querySelector('input').value - 180; //get input value from the slider
   document.getElementById("myDIV").style.transform = "rotate("+slider_value+"deg)"; // give input value to rotate the image
       
     //    document.getElementById("demo").innerHTML = slider_value; // give input value to demo 
