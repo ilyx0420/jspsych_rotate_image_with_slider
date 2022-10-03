@@ -32,13 +32,13 @@ jsPsych.plugins['html-response-rotate-image-self'] = (function() {
       max: {
         type: jsPsych.plugins.parameterType.INT,
         pretty_name: 'Max slider',
-        default: 180,
+        default: 360,
         description: 'Sets the maximum value of the slider',
       },
       slider_start: {
         type: jsPsych.plugins.parameterType.INT,
         pretty_name: 'Slider starting value',
-        default: 90,
+        default: 180,
         description: 'Sets the starting value of the slider',
       },
       step: {
